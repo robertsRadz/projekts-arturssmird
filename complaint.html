@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sūdzības forma - SaplīsisTraktors.lv</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Saplīsistraktors.lv</h1>
+            </div>
+            <div class="auth">
+                <a href="index.html">Atpakaļ uz sākumlapu</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="complaint-form">
+            <h2>Iesniegt sūdzību</h2>
+            <form id="complaintForm">
+                <div class="form-group">
+                    <label for="name">Vārds, Uzvārds:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-pasts:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="problem">Problēmas apraksts:</label>
+                    <textarea id="problem" name="problem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Iesniegt</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

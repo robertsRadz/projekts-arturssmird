@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     serviceBtn.addEventListener('click', function() {
-        alert('Sūdzības iesniegšanas forma būs pieejama drīzumā!');
+        window.location.href = 'complaint.html';
     });
 });
