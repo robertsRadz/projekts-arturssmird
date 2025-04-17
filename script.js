@@ -16,8 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (complaintForm) {
         complaintForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Jūsu sūdzība tika iesniegta');
-            window.location.href = 'index.html';
+            const popup = document.getElementById('thankYouPopup');
+            popup.style.display = 'block';
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 2000);
         });
     }
 });
