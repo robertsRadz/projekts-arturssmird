@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="lv">
 <head>
@@ -19,25 +18,15 @@
         </nav>
     </header>
 
-    <main>
-        <section class="complaint-form">
-            <h2>Iesniegt sūdzību</h2>
-            <form id="complaintForm">
-                <div class="form-group">
-                    <label for="name">Vārds, Uzvārds:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">E-pasts:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="problem">Problēmas apraksts:</label>
-                    <textarea id="problem" name="problem" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Iesniegt</button>
-            </form>
-        </section>
+    <main class="complaint-main">
+        <form id="complaintForm" class="complaint-form">
+            <div class="form-group">
+                <label for="complaint">Sūdzība:</label>
+                <input type="text" id="complaint" name="complaint" required>
+            </div>
+            <button type="submit" class="submit-complaint-btn">Iesniegt</button>
+        </form>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
