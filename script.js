@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 popup.style.display = 'block';
                 setTimeout(() => {
                     window.location.href = 'index.html';
-                }, 2000);
+                }, 10000);
             }
         });
     }
