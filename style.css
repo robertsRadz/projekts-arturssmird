@@ -30,7 +30,7 @@ nav {
     gap: 1rem;
 }
 
-.logo-img {
+.nav-logo {
     height: 40px;
 }
 
@@ -41,13 +41,28 @@ nav {
 
 .auth {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.login-container {
+    display: flex;
     align-items: center;
+    gap: 0.5rem;
+}
+
+.user-icon, .lock-icon {
+    height: 24px;
 }
 
 .login-btn {
     color: black;
     text-decoration: none;
+}
+
+.phone {
+    color: black;
 }
 
 main {
@@ -67,7 +82,7 @@ main {
 }
 
 .main-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -78,6 +93,7 @@ main {
 }
 
 .sub-text {
+    font-size: 1.2rem;
     margin-top: 1rem;
 }
 
@@ -95,8 +111,9 @@ main {
 
 .label {
     background-color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     margin: 0.5rem 0;
+    font-weight: bold;
 }
 
 .gallery-btn {
@@ -105,15 +122,32 @@ main {
     padding: 0.5rem 2rem;
     margin-top: 1rem;
     cursor: pointer;
+    font-weight: bold;
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #D9D9D9;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.location-icon {
+    height: 24px;
 }
 
 .service-btn, .about-btn {
@@ -133,82 +167,9 @@ footer {
         align-items: center;
     }
 
-    footer {
+    .footer-content {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
     }
-}
-.phone{
-    color: black;
-}
-
-.complaint-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 80px);
-    background-color: #D9D9D9;
-}
-
-.complaint-form {
-    width: 90%;
-    max-width: 800px;
-    padding: 2rem;
-    background-color: #8B7355;
-    border-radius: 4px;
-}
-
-.form-group {
-    margin-bottom: 2rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: white;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 0.5rem;
-    border: none;
-    background-color: white;
-}
-
-.submit-complaint-btn {
-    display: block;
-    width: 150px;
-    margin: 2rem auto 0;
-    padding: 0.5rem 1rem;
-    background-color: #B5A69E;
-    border: none;
-    color: black;
-    cursor: pointer;
-}
-
-.popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    text-align: center;
-    max-width: 400px;
-    width: 90%;
-}
-
-.popup h2 {
-    font-size: 2rem;
-    color: #ff69b4;
-    margin-bottom: 1rem;
-}
-
-.popup p {
-    color: #333;
-    margin-bottom: 1.5rem;
 }
