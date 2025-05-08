@@ -71,10 +71,16 @@ main {
     padding: 0 1rem;
 }
 
+.main-text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
 .content-container {
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
+    align-items: flex-start;
 }
 
 .left-side, .right-side {
